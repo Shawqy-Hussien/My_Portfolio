@@ -864,10 +864,6 @@ button:hover {
         margin-right: auto;
     }
 
-    .services {
-        background-color: #25d366;
-    }
-
     .service {
         display: flex;
         flex-direction: column;
