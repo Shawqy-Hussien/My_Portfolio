@@ -281,11 +281,18 @@
                     autocapitalize="on" spellcheck="true">
                     <div class="input-box">
                         <div class="input-field">
-                            <input type="text" name="full-name" id="full-name" placeholder="Full Name" required>
+                            <input type="text" name="full-name" id="full-name" placeholder="Full Name" required
+                                pattern="[a-zA-Z\s]+" title="Please enter a valid name (letters and spaces only)">
                         </div>
                         <div class="input-field">
                             <input type="email" name="email" id="email" placeholder="Email Adderss"
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                                title="Please enter a valid email address">
+                        </div>
+                        <div class="input-field">
+                            <input type="tel" name="phone" id="phone" placeholder="Whatsapp Number e.x +20xxxxxxxxxx"
+                                pattern="^\+20\d{10}$" required
+                                title="Please enter a valid WhatsApp number (e.g., +201234567890)">
                         </div>
                     </div>
                     <div class="input-box">
