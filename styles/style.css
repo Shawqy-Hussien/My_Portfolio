@@ -358,6 +358,144 @@ button:hover {
     transform: scale(1.5);
 }
 
+.why-me a {
+    font-size: 18px;
+    line-height: 17px;
+    padding: 10px;
+    text-decoration: none;
+    color: #777bb4;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+    transition: 0.5s ease;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.why-me a i {
+    font-weight: thin;
+}
+
+.why-me a:hover {
+    text-shadow: 0 0 5px #fff;
+    transform: scale(1.02);
+}
+
+/* ========================== Why Me ========================== */
+.why-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    color: #ccc;
+    transition: 0.5s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.03);
+    background-color: #010626;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.733);
+}
+
+.feature-card-head {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.feature-card-head h3 {
+    color: #504ea7;
+}
+
+.feature-icon {
+    color: #fff;
+}
+
+.feature-card p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.feature-card:hover p {
+    color: #fff;
+}
+
+.go-back {
+    margin-top: 20px;
+}
+
+.go-back a {
+    font-size: 18px;
+    line-height: 17px;
+    padding: 10px;
+    text-decoration: none;
+    color: #777bb4;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+    transition: 0.5s ease;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.go-back a:hover {
+    text-shadow: 0 0 5px #fff;
+    transform: scale(1.02);
+}
+
+/* Feature icons */
+.feature-card .fa-tachometer-alt-average {
+    color: #f29111;
+}
+
+.feature-card .fa-users {
+    color: #4caf50;
+}
+
+.feature-card .fa-cogs {
+    color: #ff9800;
+}
+
+.feature-card .fa-palette {
+    color: #e91e63;
+}
+
+.feature-card .fa-mobile-alt {
+    color: #2196f3;
+}
+
+.feature-card .fa-shield-alt {
+    color: #9c27b0;
+}
+
+
 /* ========================== Services ========================== */
 .services {
     position: relative;

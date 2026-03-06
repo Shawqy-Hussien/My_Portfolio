@@ -22,7 +22,19 @@ const homeBtn = document.querySelector(".home-btn");
 homeBtn.addEventListener("click", () => {
     document.querySelector(".home").classList.remove("active");
     document.querySelector(".about").classList.add("active");
-})
+});
+
+const whyMeBtn = document.querySelector(".why-me a");
+whyMeBtn.addEventListener("click", () => {
+    document.querySelector(".about").classList.remove("active");
+    document.querySelector(".why-me-section").classList.add("active");
+});
+
+const goBackBtn = document.querySelector(".go-back a");
+goBackBtn.addEventListener("click", () => {
+    document.querySelector(".why-me-section").classList.remove("active");
+    document.querySelector(".about").classList.add("active");
+});
 
 const profile = document.querySelector(".profile");
 profile.addEventListener("click", () => {
