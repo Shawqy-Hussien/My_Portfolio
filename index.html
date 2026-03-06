@@ -276,13 +276,16 @@
         <section class="contact" id="contact">
             <div class="section-container">
                 <h2 class="section-head">Get In Touch</h2>
-                <form action="mailto:shawqyhussien72@gmail.com" method="POST">
+                <!-- //secure form to send the message to my email using formspree -->
+                <form action="https://formspree.io/f/xojkqabe" method="POST" autocomplete="on" autocorrect="on"
+                    autocapitalize="on" spellcheck="true">
                     <div class="input-box">
                         <div class="input-field">
                             <input type="text" name="full-name" id="full-name" placeholder="Full Name" required>
                         </div>
                         <div class="input-field">
-                            <input type="email" name="email" id="email" placeholder="Email Adderss" required>
+                            <input type="email" name="email" id="email" placeholder="Email Adderss"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                         </div>
                     </div>
                     <div class="input-box">
