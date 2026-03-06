@@ -18,8 +18,8 @@ body {
     display: grid;
     grid-template-areas: "left-side.left-sidebar .main-content right-side.left-sidebar";
     grid-template-columns: 1fr 3.75fr 0.25fr;
-    /* background-color: #010626; */
-    background: url(/assets/images/portfolio_1.png);
+    background: url(../assets/images/portfolio_1.png) no-repeat center center fixed;
+    background-size: cover;
     align-content: center;
     color: #fff;
     height: 100vh;
