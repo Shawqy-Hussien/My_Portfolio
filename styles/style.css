@@ -1109,7 +1109,7 @@ button:hover {
     color: #fff;
     overflow: hidden;
     z-index: 9999;
-    background: url(/assets/images/portfolio_5.png) center center fixed;
+    background: url(../assets/images/portfolio_5.png) center center fixed;
     animation: doorDisappear 1.5s ease 1s forwards;
 }
 
