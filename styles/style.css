@@ -1102,43 +1102,17 @@ button:hover {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100vh;
     color: #fff;
     overflow: hidden;
     z-index: 9999;
     background: url(../assets/images/portfolio_5.png) center center fixed;
     animation: doorDisappear 1.5s ease 1s forwards;
-}
-
-.door {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.intro .left-side,
-.intro .right-side {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.intro .left-side {
-    text-align: flex-end;
-}
-
-.intro .right-side {
-    text-align: flex-start;
 }
 
 .intro .door-msg {
@@ -1148,39 +1122,13 @@ button:hover {
     width: 100%;
 }
 
-.welc {
-    text-align: right;
-    transform: translateX(20px);
-}
-
-.come {
-    text-align: left;
-    transform: translateX(-25px);
-}
-
 .intro .paragraph {
     margin-top: 20px;
     font-size: 2rem;
     width: 100%;
 }
 
-.left-side .paragraph {
-    text-align: right;
-}
 
-.left-side .paragraph {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.door p {
-    display: inline-block;
-}
-
-.left-side .paragraph::after {
-    content: "";
-    width: 3px;
-}
 
 @keyframes doorDisappear {
     100% {
