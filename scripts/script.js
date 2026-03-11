@@ -49,14 +49,34 @@ navArrow.addEventListener("click", () => {
     navigation.classList.toggle("activate");
 });
 
-
-
 const navLinks = document.querySelectorAll(".navLinks a");
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
         const navbar = document.querySelector(".navLinks");
         navbar.classList.remove("activate");
     });
+});
+
+//deActivate the navbar when clicking outside of it or a link in it
+document.addEventListener("click", (e) => {
+    const navbar = document.querySelector(".navbar");
+    const navArrow = document.querySelector(".nav-arrow");
+    if (!navbar.contains(e.target) && !navArrow.contains(e.target)) {
+        navbar.classList.remove("activate");
+        navArrow.classList.remove("rotate");
+    } else if (navbar.contains(e.target)) {
+        navbar.classList.remove("activate");
+        navArrow.classList.remove("rotate");
+    }
+});
+
+//deActivate the profile card when clicking outside of it   
+document.addEventListener("click", (e) => {
+    const profileCard = document.querySelector(".profile-card");
+    const profile = document.querySelector(".profile");
+    if (!profileCard.contains(e.target) && !profile.contains(e.target)) {
+        profileCard.classList.remove("activate");
+    }
 });
 
 const skillCards = document.querySelectorAll(".skill-card");
